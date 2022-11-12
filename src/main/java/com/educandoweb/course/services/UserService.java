@@ -13,8 +13,18 @@ public class UserService {
 	
 	@Autowired
 	private UserRepository repository;
+	public User findById;
 	
 	public List<User> findAll() {
 		return repository.findAll();
+	}
+	
+	public User insert(User obj) {
+		return repository.save(obj);
+	}
+
+	public User findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
